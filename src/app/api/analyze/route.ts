@@ -31,9 +31,9 @@ export async function POST(req: Request) {
       model,
       system: buildSystemPrompt(intensity),
       messages: [{ role: 'user', content: `Analyze this idea: ${idea}` }],
-      maxTokens: 2000,
+      maxOutputTokens: 2000,
     })
-    return result.toDataStreamResponse()
+    return result.toTextStreamResponse()
   } catch (err) {
     const message = err instanceof Error ? err.message : 'AI provider error'
     return new Response(message, { status: 502 })

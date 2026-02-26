@@ -22,6 +22,7 @@ export default function Home() {
       ? { 'x-ai-provider': config.provider, 'x-ai-key': config.apiKey }
       : {},
     body: { intensity: currentIntensity },
+    streamProtocol: 'text',
     onError: (err) => console.error('Analysis error:', err),
   })
 
