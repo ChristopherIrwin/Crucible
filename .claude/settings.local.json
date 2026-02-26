@@ -9,7 +9,11 @@
       "Bash(export:*)",
       "Bash(cp:*)",
       "Bash(git init:*)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "Bash(npm run:*)",
+      "Bash(npx shadcn@latest:*)",
+      "Bash(node:*)",
+      "Bash(/home/chris/.nvm/versions/node/v24.14.0/bin/npm install:*)"
     ]
   }
 }
