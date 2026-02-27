@@ -1,3 +1,13 @@
+export type ConfidenceLevel = 'high' | 'med' | 'low'
+
+export interface Confidence {
+  tearDown: ConfidenceLevel
+  assumptions: ConfidenceLevel
+  failureModes: ConfidenceLevel
+  rebuild: ConfidenceLevel
+  landscape: ConfidenceLevel
+}
+
 export interface Scorecard {
   clarity: number
   realPain: number
@@ -21,8 +31,11 @@ export interface AnalysisResult {
   assumptions: string
   failureModes: string
   rebuild: string
+  landscape: string
   mutation: MutationVariants
+  followUpQuestions: string[]
   scorecard: Scorecard
+  confidence: Confidence
   createdAt: number
 }
 
@@ -31,8 +44,11 @@ export interface ParsedSections {
   assumptions?: string
   failureModes?: string
   rebuild?: string
+  landscape?: string
   mutation?: Partial<MutationVariants>
+  followUpQuestions?: string[]
   scorecard?: Scorecard
+  confidence?: Confidence
   isComplete: boolean
 }
 
