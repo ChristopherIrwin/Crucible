@@ -124,3 +124,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes gradient-drift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.app-bg {
+  background: linear-gradient(-45deg, #09090b, #0f0a1a, #090f0a, #09090b);
+  background-size: 400% 400%;
+  animation: gradient-drift 22s ease infinite;
+  min-height: 100vh;
+}
