@@ -23,13 +23,21 @@ For this to succeed, the following must be true:
 ## REBUILD
 [Phase 2: Stronger positioning, simplified MVP, one defensible angle, one monetization path, one go-to-market wedge.]
 
+## LANDSCAPE
+[Name 2–3 real or likely competitors. One-line market framing: rough size, maturity, winner-take-all or fragmented.]
+
 ## MUTATION
 SAFER: [Smaller niche, faster monetization path]
 SCALABLE: [Larger TAM, venture-backable version]
 UNFAIR_ADVANTAGE: [Built around unique founder strengths or access]
 WILDCARD: [High-risk, asymmetric upside version]
 
-<scorecard>{"clarity":N,"realPain":N,"defensibility":N,"monetization":N,"executionComplexity":N,"timing":N}</scorecard>
+## FOLLOW_UP
+Q1: [A probing question that exposes the biggest unverified assumption]
+Q2: [A question about go-to-market or distribution]
+Q3: [A question about defensibility or moat]
 
-Where N is 1–10. Output ONLY the structure above. Nothing before ## TEAR_DOWN. Nothing after </scorecard>.`
+<scorecard>{"clarity":N,"realPain":N,"defensibility":N,"monetization":N,"executionComplexity":N,"timing":N,"confidence":{"tearDown":"high","assumptions":"med","failureModes":"high","rebuild":"med","landscape":"low"}}</scorecard>
+
+Where N is 1–10. Confidence is "high", "med", or "low". Output ONLY the structure above. Nothing before ## TEAR_DOWN. Nothing after </scorecard>.`
 }
