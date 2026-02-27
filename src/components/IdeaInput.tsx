@@ -8,10 +8,11 @@ import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group'
 interface Props {
   onAnalyze: (idea: string, intensity: 'mild' | 'brutal') => void
   isLoading: boolean
+  initialIdea?: string
 }
 
-export function IdeaInput({ onAnalyze, isLoading }: Props) {
-  const [idea, setIdea] = useState('')
+export function IdeaInput({ onAnalyze, isLoading, initialIdea }: Props) {
+  const [idea, setIdea] = useState(initialIdea ?? '')
   const [intensity, setIntensity] = useState<'mild' | 'brutal'>('brutal')
 
   function handleSubmit() {
